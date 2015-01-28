@@ -1,0 +1,83 @@
+template(name="invoice")
+  .invoice-layout
+    .container 
+      h1  Cake Vegan Cake
+      .swirl
+      #pedidos.responsive-table
+        table.table.table-stripped.table-hover
+          thead
+            tr
+              th #
+              th Produto
+              th Quantidade
+              th Valor
+          tbody
+            tr
+              th(scope="row") 1
+              td Pizza
+              td 10
+              td R$ 15,00
+            tr
+              th(scope="row") 2
+              td Pizza
+              td 10
+              td R$ 15,00
+            tr
+              th(scope="row") 3
+              td Pizza
+              td 10
+              td R$ 15,00
+      #info
+        h3 Valor Total: R$ 232,00
+        h4 Olá <strong>João</strong>, preencha abaixo para finalizar seu pedido:
+      #cc
+        form
+          .flags
+            ul
+              li.visa VISA
+              li.mastercard MASTERCARD
+              li.amex AMEX
+              li.diners DINERS
+              li.hipercard HIPERCARD
+          h4 Cartão de crédito
+          h5 Numero do Cartao 
+          input(placeholder="4242 42.." type="text" id="cc-number")
+          
+          .expr.col-xs-10
+            h5 Expiracao
+            .form-inline
+              .expr-select.col-xs-5
+                select.form-control
+                  option Janeiro(1)
+                  option Fevereiro(2)
+                  option Março(3)
+                  option Abril(4)
+                  option Maio(5)
+                  option Junho(6)
+                  option Julho(7)
+                  option Agosto(8)
+                  option Setembro(9)
+                  option Outubro(10)
+                  option Novembro(11)
+                  option Dezembro(12)
+              .expr-select.col-xs-4
+                select.form-control
+                  option 2015 
+                  option 2016 
+                  option 2017 
+                  option 2018 
+                  option 2019 
+                  option 2020 
+                  option 2021 
+                  option 2022 
+                  option 2023 
+                  option 2024 
+                  option 2025 
+                  option 2026 
+          .cod.col-xs-2.col-xs-pull-1
+            h5 CVC 
+            input(placeholder="424" maxlength="4" type="text" id="cc-cvc")
+      .btn-submit
+        input.btn.btn-primary(type="submit" value="Confirmar pagamento")
+    #thecake.visible-lg-block
+    
