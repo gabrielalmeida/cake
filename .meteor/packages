@@ -9,11 +9,13 @@ meteor-platform
 autopublish
 insecure
 jquery
+underscore
 less
 
 # Atmosphere
 mquandalle:jade
 iron:router
 nemo64:bootstrap
+#mquandalle:bower
 
 # internals

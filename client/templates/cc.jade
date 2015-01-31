@@ -1,0 +1,21 @@
+template(name="cc")
+  #cc
+    form(autocomplete="on")
+      .flags
+        ul
+          li.visa VISA
+            li.mastercard MASTERCARD
+              li.amex AMEX
+              li.diners DINERS
+              li.hipercard HIPERCARD
+      h4 Cartão de crédito
+      h5 Numero do Cartao 
+      input(placeholder="4242 42.." type="tel" autocomplete="cc-number" id="cc-number")
+      .expr.col-xs-4
+        h5 Expiracao
+        .form-inline
+          input(placeholder="02/18" maxlength="7" type="tel" autocomplete="cc-exp" id="cc-expiracy")
+      .cvc.col-xs-2
+        h5 CVC 
+        input(placeholder="424" maxlength="4" type="tel" autocomplete="off" id="cc-cvc")
+
