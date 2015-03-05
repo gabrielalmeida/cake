@@ -12,10 +12,22 @@ jquery
 underscore
 less
 
+accounts-base
+accounts-password
+
 # Atmosphere
 mquandalle:jade
 iron:router
 nemo64:bootstrap
+fortawesome:fontawesome
 #mquandalle:bower
+momentjs:moment
+
+dburles:collection-helpers
+comerc:bs-typeahead
+comerc:autoform-typeahead
+aldeed:autoform
+useraccounts:bootstrap
+yogiben:admin
 
 # internals

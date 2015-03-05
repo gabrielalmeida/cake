@@ -1,5 +1,5 @@
-@import "bootstrap/custom.bootstrap.import.less";
-@import "lesshat.import.less";
+@import "utils/bootstrap/custom.bootstrap.import.less";
+@import "utils/lesshat.import.less";
 @import 'variables.import.less';
 
 @import 'global.import.less';
@@ -7,14 +7,10 @@
 // Layout Stuff
 @import 'layouts/header.import.less';
 
-// Logo
-@import 'logo.import.less';
+
+@import 'admin.import.less';
 
 // Invoice apart layout
-@import 'cc.import.less';
-@import 'invoice.import.less';
-
-// Customers page
-@import 'customers.import.less';
-
+@import '../templates/invoice/cc.import.less';
+@import '../templates/invoice/invoice.import.less';
 
